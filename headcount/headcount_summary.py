@@ -26,6 +26,7 @@ durLoad = end - start0 #duration to Load
 start = time.time() #Start Table creation timer
 table = []
 
+
 #This will be less fragile if I take the following advice from Glen:
     #do this by column header/name instead of index
     #include code that will throw a VISIBLE exception if a needed column is missing
