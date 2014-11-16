@@ -30,6 +30,12 @@ table = []
 #This will be less fragile if I take the following advice from Glen:
     #do this by column header/name instead of index
     #include code that will throw a VISIBLE exception if a needed column is missing
+'''
+1.  Bring in list of column header names, `criteria`
+2.  Pull in header row from `source`, the data spreadsheet
+3.  get the indexes of each column in the `criteria` list
+4.  put those indexes into the `ref` list used in the pseudo-function below
+'''
 for row in range(len(source.rows)):
     r =[]
     ref = (3, 2, 0, 10, 4, 17, 21) 
