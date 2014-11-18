@@ -31,11 +31,14 @@ table = []
     #do this by column header/name instead of index
     #include code that will throw a VISIBLE exception if a needed column is missing
 '''
-1.  Bring in list of column header names, `criteria`
-2.  Pull in header row from `source`, the data spreadsheet
+1.  Bring in list of column header names, `criteria`: DONE
+2.  Pull in header row from `source`, the data spreadsheet: DONE
 3.  get the indexes of each column in the `criteria` list
 4.  put those indexes into the `ref` list used in the pseudo-function below
 '''
+criteria = ["Employee Num", "CC", "Company", "DOE/Project", "Total Hours"] #short for criteria
+header = source.rows[0] #header is a tuple of <class 'openpyxl.cell.Cell'>
+
 for row in range(len(source.rows)):
     r =[]
     ref = (3, 2, 0, 10, 4, 17, 21) 

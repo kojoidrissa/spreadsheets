@@ -19,7 +19,7 @@ source = wb.get_sheet_by_name('raw data')
 start = time.time() #Start Table creation timer
 table = []
 
-crit = ["Employee Num", "CC", "Company", "DOE/Project", "Total Hours"] #short for criteria
+criteria = ["Employee Num", "CC", "Company", "DOE/Project", "Total Hours"] #short for criteria
 
 
 
